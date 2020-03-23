@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      天气预报
+    </title>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/3.2.0/sanitize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.eot">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.woff2">
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+   
+  </head>
+
+  <body>
+    <div class="se-pre-con"></div>
+    <main class="wrapper">
+      <header>
+        <nav class="unit-toggle">
+          <button id="unit_cel" disabled>C</button>
+          <span class="divider"> / </span>
+          <button id="unit_fah">F</button>
+        </nav>
+        <!--end nav unit-toggle-->
+      </header>
+    
+      <div class="forecast">
+        <!--<p class="forecast_city">YangZhou</p>-->
+        <!--<p class="forecast_country">China</p>-->
+        <p class="forecast_city"></p>
+        <p class="forecast_country"></p>
+    
+        <!--<p class="forecast_icon wi wi-day-sunny"></p>-->
+        <p class="forecast_icon"></p>
+    
+        <!--<p class="forecast_summary"></p>-->
+        <p class="forecast_summary"></p>
+    
+        <div class="forecast_cont">
+          <p class="forecast_high">
+            <span class="wi wi-direction-up"></span>
+            <span class="high_temp"><!--30&deg;--></span>
+    
+          </p>
+    
+          <p class="forecast_low">
+            <span class="wi wi-direction-down"></span>
+            <span class="low_temp"><!--26&deg;--></span>
+          </p>
+    
+          <p class="forecast_temp">
+            <!--29&deg;-->
+          </p>
+        </div>
+      </div>
+      <!--end (today) forecast div-->
+    
+      <!--WEEKLY FORECAST-->
+      <div class="weekly">
+        <ul class="weekly_list" id="weekly_list">
+        </ul>
+      </div>
+      <!--end weekly forecast here-->
+      
+    </main>
+    
+  </body>
+</html>
